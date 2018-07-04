@@ -25,8 +25,22 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
   <head>
     <meta charset="utf-8">
     <title></title>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
   </head>
   <body>
+  	<div>
+  		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOXpVXXquBYtmgA1cHugfWa4DeRKLoN-AWh_DEIjff2rEih8RcqA">
+  	</div>
+  	<script>
+  		$("img").on("contextmenu", function(e) {
+  			e.preventDefault();
+  			$("img").text("");
+  			});
+  		$("img").on("contextmenu", function (){
+  			alert("imagene protegida por derecho de autor, no se puede descargar sin consentimiento");
+  		});
+  	</script>
 
   </body>
 </html>
